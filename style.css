@@ -1,0 +1,290 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Gowun Batang", serif;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+}
+
+.list-item{
+    list-style: none;
+    display: inline;
+    margin: 0px 15px;
+}
+
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.links:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+#home{
+    height: 500px;
+}
+
+.home-content{
+    margin: 13% 0px 0px 8%;
+}
+
+#username{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Playwrite DE Grund", cursive;
+}
+
+#lname{
+    color: blue;
+    font-family: "Playwrite DE Grund", cursive;
+}
+
+#userDetails{
+    line-height: 1.5;
+}
+
+#download{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+.home-img{
+    width: 45%;
+    height: 75%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+
+.group1{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 2s, left 3s;
+}
+
+.home-img:hover #shape{
+    bottom: 70px;
+}
+
+.home-img:hover #girl{
+    left: 30px;
+}
+
+#about{
+    margin: 4% 8% 0px 8%;
+}
+
+.sectionHead{
+    text-align: center;
+}
+
+.mainHead{
+    font-size: 35px;
+}
+
+.subHead{
+    font-size: 20px;
+    color: brown;
+}
+
+.aboutBody{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    align-items: center;
+}
+
+.img1{
+    width: 100%;
+}
+
+.aboutContent{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.info{
+    margin-top: 1.3rem;
+}
+
+.infobox{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.infobox>span{
+    margin-left: 1rem;
+}
+
+#skill{
+    margin: 10% 8% 0px 8%;
+}
+
+.skillContent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    /* align-items: center; */
+}
+
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0px;
+}
+
+.barPercent{
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.basebar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.htmlbar{
+    width: 93%;
+    background-color: #64c7ee;
+}
+
+.cssbar{
+    width: 75%;
+    background-color: #64c7ee;
+}
+
+.reactbar{
+    width: 60%;
+    background-color: #64c7ee;
+}
+
+.jsbar{
+    width: 55%;
+    background-color: #64c7ee;
+
+}
+
+#contact{
+    margin: 10% 8% 0px 8%;
+}
+
+.iconCollectn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    /* border: solid; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.brands{
+    color: black;
+    font-size: 2rem;
+}
+
+.icon:hover{
+    background-image: linear-gradient(to bottom right, skyblue, green);
+}
+
+.icon:hover .brands{
+    color: white;
+    /* amination */
+    animation: rotate 3s;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(-30deg);
+    }
+    20%{
+        transform: rotate(30deg);
+    }
+    40%{
+        transform: rotate(-30deg);
+    }
+    60%{
+        transform: rotate(30deg);
+    }
+    80%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(30deg);
+    }
+}
+
+footer{
+    margin-top: 8%;
+}
+
+#copyright{
+    text-align: center;
+    font-weight: 600;
+}
+
+.upArrow{
+    float: right;
+    margin: -40px 20px 20px 20px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgb(156, 156, 156);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: skyblue;
+    border-radius: 10px;
+}

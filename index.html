@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Gowun+Batang:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playwrite+DE+Grund:wght@100..400&display=swap"
+        rel="stylesheet">
+
+    <!-- Animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div id="container">
+        <!-- navigation bar -->
+        <nav>
+            <!-- logo -->
+            <img class="logo" src="./images/logo.png" alt="">
+            <!-- links -->
+            <ul>
+                <li class="list-item"><a class="links" href="#home">Home</a></li>
+                <li class="list-item"><a class="links" href="#about">About</a></li>
+                <li class="list-item"><a class="links" href="#skill">Skills</a></li>
+                <li class="list-item"><a class="links" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- home -->
+        <section id="home">
+            <div class="home-content">
+                <h1 class="animate__animated animate__bounce" id="username">I'm Gauri <span id="lname">Santhosh</span>
+                </h1>
+                <p id="userDetails">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Laboriosam aut
+                    impedit, quos veniam earum dolorum.</p>
+                <a id="download" href="">Download CV</a>
+            </div>
+            <div class="home-img">
+                <img id="shape" class="group1" src="./images/shape.png" alt="shape">
+                <img id="girl" class="group1" src="./images/girl.png" alt="girl">
+            </div>
+        </section>
+
+        <!-- about -->
+        <section id="about">
+            <div class="sectionHead">
+                <h2 class="mainHead">About me</h2>
+                <span class="subHead">Introduction</span>
+            </div>
+            <div class="aboutBody">
+                <div class="aboutImage">
+                    <img class="img1" src="./images/about.jpg" alt="">
+                </div>
+                <div class="aboutContent">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum hic dolore quidem. Debitis
+                        voluptatibus accusantium, exercitationem quasi repellendus quo laudantium magnam nostrum omnis.
+                        Fugit esse minus mollitia, voluptatibus harum nemo.
+                        Aut officiis libero sapiente eos. Sunt commodi aut architecto dignissimos sed amet obcaecati
+                        quis, totam molestias, iusto, officia animi necessitatibus. Dolore quia ducimus, modi delectus
+                        magni voluptas. Animi, pariatur eaque?</p>
+                    <div class="info">
+                        <div class="infobox">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Gauri Santhosh</span>
+                        </div>
+                        <div class="infobox">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>7394029948</span>
+                        </div>
+                        <div class="infobox">
+                            <i class="fa-regular fa-envelope"></i>
+                            <span>gauri@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- skills -->
+        <section id="skill">
+            <div class="sectionHead">
+                <h2 class="mainHead"> Skills</h2>
+                <span class="subHead">My Skills</span>
+            </div>
+            <div class="skillContent">
+                <!-- Progress bar -->
+                <div class="progressBar">
+                    <div class="bars">
+                        <h3 class="barHead">HTML</h3>
+                        <span class="barPercent">92%</span>
+                        <div class="basebar"></div>
+                        <div class="basebar htmlbar"></div>
+                    </div>
+
+                    <div class="bars">
+                        <h3 class="barHead">CSS</h3>
+                        <span class="barPercent">75%</span>
+                        <div class="basebar"></div>
+                        <div class="basebar cssbar"></div>
+                    </div>
+
+                    <div class="bars">
+                        <h3 class="barHead">React</h3>
+                        <span class="barPercent">60%</span>
+                        <div class="basebar"></div>
+                        <div class="basebar reactbar"></div>
+                    </div>
+
+                    <div class="bars">
+                        <h3 class="barHead">Javascript</h3>
+                        <span class="barPercent">55%</span>
+                        <div class="basebar"></div>
+                        <div class="basebar jsbar"></div>
+                    </div>
+
+                </div>
+
+                <!--Skill Image  -->
+                <div class="skillimg">
+                    <img width="400px" src="./images/skill.webp" alt="skill">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- contact -->
+        <section id="contact">
+            <div class="sectionHead">
+                <h2 class="mainHead">Contacts</h2>
+                <span class="subHead">My Contact</span>
+            </div>
+            <!-- icons -->
+            <div class="iconCollectn">
+                <!-- linkedin -->
+                <div class="icon">
+                    <a target="_blank" href=""><i class="fa-brands fa-linkedin brands"></i></a>
+                </div>
+
+                <!-- github -->
+                <div class="icon">
+                    <a target="_blank" href=""><i class="fa-brands fa-github brands"></i></a>
+                </div>
+
+                <!-- facebook -->
+                <div class="icon">
+                    <a target="_blank" href=""><i class="fa-brands fa-facebook brands"></i></a>
+                </div>
+
+                <!-- twitter -->
+                <div class="icon">
+                    <a target="_blank" href=""><i class="fa-brands fa-x-twitter brands"></i></a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <p id="copyright"> &copy; Lorem ipsum dolor sit amet consectetur adipisicing elit. &reg; Gauri Santhosh</p>
+
+            <div class="icon upArrow">
+                <a href="#container"><i class="fa-solid fa-angle-up brands"></i></a>
+            </div>
+        </footer>
+        <br><br><br><br><br><br><br><br><br><br>
+    </div>
+</body>
+
+</html>
